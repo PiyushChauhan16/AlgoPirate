@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# AlgoPirate - A ship that can assure a smooth sailing in your coding journey
+Tutorial: https://drive.google.com/file/d/1vwZ6cKcOz1DjXXvqb8UzQAIcy9ee1cA8/view?usp=sharing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Task to achieve
+- Re-engineer the "RUN-ALL-TESTS" button to validate user solution
 
-## Available Scripts
+# AlgoPirate key features
+- codemirror text editor in dark theme with support for multiple languages (currently added support for C++ only)
+- Facilitate compilation and building of the program using rapidAPI's Online Compiler API.
+- Interactive and modern UI
+- Compile and run a single testcase
+- Run all tests
+- User's submitted solution runtime and memory chart built using chart.js
+- local storage of written code.
+- CHATGPT integration using rapidAPI's OPEN AI by PR labs
 
-In the project directory, you can run:
+# API and external package link
+- Chatgpt API: https://rapidapi.com/rphrp1985/api/open-ai21
+- Compiler API: https://rapidapi.com/realbrain-realbrain-default/api/code-compiler10
+- Codemirror: https://www.npmjs.com/package/codemirror
 
-### `npm start`
+# Approach
+- Design a layout of the UI to enable user to write, run and debug code at the same place.
+- Utilized codermirror module to build text editor with language support.
+- Utilised compiler API to enable compilation of code.
+- Built various custom hooks to cater the needs of frequently used functions.
+- Utilised chatgpt API to enable user write better and faster code.
+- Built runtime and memory graph using Chart.js to enable user gauge his/her performance againt other users.
+- Utilized local storage to store code and added boiler plate support
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Assumptions 
+- Database is already present and custom hooks such as useGetProblemStat, usedataGen extract data from these databases. (Reality: Code has been written to generate random user data)
+- Compiler API is not sophisticated enough. Therfore, added random values regarding cpuTime and memory for the compiled code written in text editor.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+These assumptions seems fit for this problem statement and code would work fine once it gets access to backend and good compiler !
 
-### `npm test`
+# Future prospects
+- UX improvement by adding loaders/shimmer UI
+- @media queries to make site portable on various devices
+- Making prompt UI better.
+- Link django as the backend.
+- Have better custom input.
+- Fix: compile and run button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
