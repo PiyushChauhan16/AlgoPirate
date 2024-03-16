@@ -1,0 +1,177 @@
+.CodeMirror {
+    height: 500px;
+    min-width: 50%;
+}
+
+.cm-editor {
+    /* our container wrapper for Codemirror instance */
+    /* flex: 1; expand to the maximum */
+    height: 100%;
+    min-width: 100%;
+    position: relative;
+    /* needed for child component .cm-scroller */
+}
+
+.cm-scroller {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.text-editor-arrangment {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    column-gap: 30px;
+
+}
+
+.question {
+    max-width: 50%;
+}
+
+.editor {
+    min-width: 50%;
+}
+
+.input {
+    margin: 10px 0px 0px 0px;
+    min-width: 97%;
+    height: 60px;
+    background-color: rgb(37, 36, 36);
+
+}
+
+.run-all-test-btn {
+    background-color: rgb(197, 18, 27);
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    min-width: 40%;
+}
+
+.run-btn {
+    background-color: rgb(49, 168, 20);
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    min-width: 40%;
+}
+
+.btn-div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.submission-window{
+    margin-top: 50px;
+    background-color: rgb(34, 30, 30);
+    padding: 30px 50px 30px 50px ;
+    border-radius: 10px;
+    box-shadow: rgb(66, 63, 63) 0px -20px 30px ;
+}
+.code-perf{
+    margin-top: 30px;
+    padding: 40px;
+    min-width:30% ;
+    background-color: rgb(153, 151, 151);
+    border-radius: 10px;
+}
+.code-perf-arr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+    font-size: 30px;
+    
+}
+.btn-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+.btn-data{
+    font-size: 18px;
+}
+.selected{
+    background-color: rgb(223, 218, 218);
+}
+.pos{
+    color: rgb(173, 167, 167);    
+    padding: 20px 40px 20px 40px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pos > span {
+    background-color: rgb(54, 52, 52);
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.pos > span > span {
+    color: rgb(231, 48, 15);
+    font-weight: bold;
+
+}
+.wa-heading{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.wa{
+    background-color: rgb(226, 216, 216);
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    min-width: 35%;
+}
+.wa > h2{
+    color: red;
+}
+.wa-arr{
+    flex-direction: row;
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+}
+.gpt-win{
+    margin-top: 40px;
+    min-width: 430px;
+    margin-right: 20px;
+    padding: 20px 20px 20px 20px;
+}
+.glass {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    min-height: 250px;
+    width: 450px;
+    border-radius: 1rem;
+    background: rgba(255, 72, 0, 0.3);
+    padding: 1.5rem;
+    color: #fff;
+    
+  }
+.prompt-win, .prompt-res-win{
+    min-width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.prompt-win{
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.prompt-res-win{
+    
+}
