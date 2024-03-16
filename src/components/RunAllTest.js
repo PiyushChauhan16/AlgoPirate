@@ -1,16 +1,16 @@
 import React from "react";
 import FeedbackGen from "./FeedbackGen.js";
 
-const  response = {
-    cpuTime: "0.357",
-    language: {
-        id: "cpp17",
-        version: 1,
-        version_name:"g++ 17 GCC 11.1.0"
-    },
-    memory:"925",
-    output: "32765\nHello, World!"
-}
+// const  response = {
+//     cpuTime: "0.357",
+//     language: {
+//         id: "cpp17",
+//         version: 1,
+//         version_name:"g++ 17 GCC 11.1.0"
+//     },
+//     memory:"925",
+//     output: "32765\nHello, World!"
+// }
 
 const RunTest = ({ques, code, input, testcases, expectedRes})=>{
     let [result, setResult] = React.useState ({})
@@ -135,9 +135,9 @@ const RunTest = ({ques, code, input, testcases, expectedRes})=>{
 
     let Helper = () => {
         // need to ChannelMergerNode
-        if (true){
+        if (correctSol != -1){
             console.log ("result in helper:", result)
-            return <FeedbackGen ques={ques} result={response} correctSol={0} lastTestCase={1}></FeedbackGen>
+            return <FeedbackGen ques={ques} result={result} correctSol={correctSol} lastTestCase={lastTestCase}></FeedbackGen>
         }
     }
 

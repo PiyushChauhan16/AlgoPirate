@@ -15,7 +15,7 @@ const problems = [
                 nums: "2\n7\n9\n3\n1\n",
             }
         ],
-        output: ["0", "0"],
+        output: ["4", "14"],
         boilerPlate: `
 #include <bits/stdc++.h>
 using namespace std;
