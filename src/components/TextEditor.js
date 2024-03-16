@@ -5,7 +5,6 @@ import { EditorState } from '@codemirror/state'
 // import { EditorState, basicSetup } from '@codemirror/basic-setup'
 import { EditorView, keymap } from '@codemirror/view'
 import { defaultKeymap, indentWithTab } from '@codemirror/commands'
-import { javascript } from '@codemirror/lang-javascript'
 import { cpp } from '@codemirror/lang-cpp'
 import Editorial from "./Editorial.js";
 import { oneDark } from '@codemirror/theme-one-dark'
