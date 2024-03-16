@@ -21,7 +21,7 @@ const Chatgpt = ({query}) => {
                 messages: [
                     {
                         role: 'user',
-                        content: JSON.stringify (query)
+                        content: JSON.stringify (inputWin)
                     }
                 ],
                 web_access: false,

@@ -1,12 +1,8 @@
-import useDataGen from "./dataGen.js";
-
 const useSortByCPUTime = (userData, submittedSolUserId) => {
     let arr = [];
     let pos = -1;
 
     for (let i = 0; i < userData.length; i++){
-        // console.log (userData[i])
-
         let dataPoint = {
             username: userData[i].username,
             cpuTime: userData[i].cpuTime

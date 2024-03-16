@@ -1,9 +1,6 @@
-import useDataGen from "./dataGen.js";
-
 const useSortByMemUsed = (userData, submittedSolUserId) => {
     let arr = [];
     for (let i = 0; i < userData.length; i++){
-        // console.log (userData[i])
 
         let dataPoint = {
             username: userData[i].username,

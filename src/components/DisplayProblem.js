@@ -1,8 +1,6 @@
-import useGetProblemStat from "../util/useGetProblemStat.js"
 import testcasePrinter from "../util/testcasePrinter.js";
 
 const DisplayProblem = ({ques}) => {
-    // testcasePrinter (ques.testcases[0])
     return (
         <div>
             <h2>

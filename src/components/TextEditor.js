@@ -2,7 +2,6 @@ import RunTest from "./RunAllTest.js"
 import DisplayProblem from "./DisplayProblem.js";
 import React, { useRef, useEffect, useState } from 'react'
 import { EditorState } from '@codemirror/state'
-// import { EditorState, basicSetup } from '@codemirror/basic-setup'
 import { EditorView, keymap } from '@codemirror/view'
 import { defaultKeymap, indentWithTab } from '@codemirror/commands'
 import { cpp } from '@codemirror/lang-cpp'
@@ -12,11 +11,9 @@ import Chatgpt from "./Chatgpt.js";
 
 
 const TextEditor = ({ques}) => {
-    // console.log ("bilerPlate:",ques.boilerPlate)
     const editor = useRef()
     let [route, setRoute] = useState (0);
     let [code, setCode] = React.useState (()=>{
-        // console.log ("local storage", typeof localStorage.getItem ("userCode"))
         if (localStorage.getItem("userCode") === ""){
             console.log ("in if")
             return ques.boilerPlate;
@@ -24,8 +21,6 @@ const TextEditor = ({ques}) => {
         else
         return localStorage.getItem ("userCode");
     });
-    // console.log ("localS:",localStorage.getItem("userCode"))
-    // console.log (code);
     let [input, setInput] = React.useState ("");
     useEffect(() => {
         const startState = EditorState.create({
@@ -83,7 +78,6 @@ const TextEditor = ({ques}) => {
         }
     }
 
-
     return (
         <>
 
@@ -110,13 +104,13 @@ const TextEditor = ({ques}) => {
                         placeholder="Enter input"
                         value={input}
                         className="input"
+                        style={{
+                            "color":"white"
+                        }}
                     
                     ></textarea>
                     
-                </div>
-                
-                        
-                
+                </div> 
             </div>
             <div className="submission-window">
             <RunTest ques = {ques} code={code} input={input} testcases={ques.testcases} expectedRes={ques.output}></RunTest>

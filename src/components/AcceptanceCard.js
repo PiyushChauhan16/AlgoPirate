@@ -1,5 +1,4 @@
 import React from "react";
-import useDataGen from "../util/dataGen.js";
 import useSortByCPUTime from "../util/useSortByCPUTime.js";
 import CPUTimeGraph from "./CPUTimeGraph.js";
 import useSortByMemUsed from "../util/useSortByMemUsed.js";
@@ -9,9 +8,7 @@ const AcceptanceCard = ({userData,runtime, memory}) => {
     const [sortedCPUTime, cpuTimePosOfUser] = useSortByCPUTime (userData, 30);
     const [sortedMemUsed, memUsedPosOfUser] = useSortByMemUsed (userData, 30);
     let [flag, setFlag] = React.useState (0);
-    
-    // console.log ("sortedCPUTime:",sortedCPUTime);
-    // console.log (flag)
+
     return (
         <div>
             <div className="code-perf-arr">

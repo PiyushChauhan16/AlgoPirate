@@ -20,7 +20,6 @@ let useDataGen = (numOfUsers, newUserData) => {
     newUserData.username = numOfUsers;
     data.push (newUserData);
 
-    // console.log (data)
     return data;
 }
 

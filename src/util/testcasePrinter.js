@@ -5,7 +5,6 @@ const testcasePrinter = (testcase) => {
         arr.push (<p>{key + ":" + testcase[key]}</p>)
     }
 
-    // console.log (arr)
     return arr;
 }
 
