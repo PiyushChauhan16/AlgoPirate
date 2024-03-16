@@ -2,11 +2,15 @@ import React from "react";
 import testcasePrinter from "../util/testcasePrinter.js";
 import Chatgpt from "./Chatgpt.js";
 
-const ErrorReport = ({input, output, expectedOutput}) => {
+const CustomReport = ({input, output, expectedOutput}) => {
+    console.log ("customRepport input:", input);
+    console.log ("custom report output:", typeof output);
+    console.log ("cusotm Report expected:", expectedOutput);
+
     return (
         <div className="wa-arr">
             <div className = "wa">
-                <h2>OOPS! Something went wrong</h2>
+                <h2>Result</h2>
                 <div>
                     <div>
                         <h3 className = "wa-heading">INPUT</h3>
@@ -29,11 +33,11 @@ const ErrorReport = ({input, output, expectedOutput}) => {
                 </div>
             </div>
             <div className="sugg-win">
-                <Chatgpt query=""></Chatgpt>
+                <Chatgpt query={""}></Chatgpt>
             </div>
         </div>
         
     )
 }
 
-export default ErrorReport
+export default CustomReport

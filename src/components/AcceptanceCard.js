@@ -4,18 +4,17 @@ import CPUTimeGraph from "./CPUTimeGraph.js";
 import useSortByMemUsed from "../util/useSortByMemUsed.js";
 import MemUsedGraph from "./MemUsedGraph.js";
 
-const AcceptanceCard = ({userData,runtime, memory}) => {
+const AcceptanceCard = ({userData, cpuTime, memory}) => {
     const [sortedCPUTime, cpuTimePosOfUser] = useSortByCPUTime (userData, 30);
     const [sortedMemUsed, memUsedPosOfUser] = useSortByMemUsed (userData, 30);
     let [flag, setFlag] = React.useState (0);
-
     return (
         <div>
             <div className="code-perf-arr">
                 <button className={"code-perf " + (flag == 0 ? "selected": "")} onClick={()=>setFlag (0) }>
                     <span className="btn-name">RUNTIME </span>
                     <br></br>
-                    <span className="btn-data">{runtime + "ms"}</span>
+                    <span className="btn-data">{cpuTime + "ms"}</span>
                 </button>
                 <button className={"code-perf "  + (flag == 1 ? "selected": "")} onClick={()=>setFlag (1)}>
                     <span className="btn-name">MEMORY </span>

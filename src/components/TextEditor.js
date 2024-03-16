@@ -66,6 +66,7 @@ const TextEditor = ({ques}) => {
         setInput (e.target.value)
     }
 
+    console.log ("input editor:", input)
     const handleRouting =()=>{
         if (route === 0){
             return <DisplayProblem ques = {ques}></DisplayProblem>
@@ -113,7 +114,7 @@ const TextEditor = ({ques}) => {
                 </div> 
             </div>
             <div className="submission-window">
-            <RunTest ques = {ques} code={code} input={input} testcases={ques.testcases} expectedRes={ques.output}></RunTest>
+            <RunTest correctCode={ques.correctCode} code={code} customInput={input} testcases={ques.testcases} expectedRes={ques.output}></RunTest>
             </div>
         </>
         

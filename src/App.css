@@ -53,6 +53,7 @@
     color: white;
     font-weight: bold;
     min-width: 40%;
+    cursor: pointer;
 }
 
 .run-btn {
@@ -63,6 +64,7 @@
     color: white;
     font-weight: bold;
     min-width: 40%;
+    cursor: pointer;
 }
 
 .btn-div {
