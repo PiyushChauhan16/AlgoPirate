@@ -1,6 +1,6 @@
 # AlgoPirate - A ship that can assure a smooth sailing in your coding journey
 Site link: https://algo-pirate.vercel.app/
-Tutorial: https://drive.google.com/file/d/1vwZ6cKcOz1DjXXvqb8UzQAIcy9ee1cA8/view?usp=sharing [OUT-DATED]
+Tutorial: https://drive.google.com/file/d/1CZZ80nqkn6NPRnnJVYgrkPMlhnpYl04Y/view?usp=sharing
 
 # Task to achieve
 - Re-engineer the "RUN-ALL-TESTS" button to validate user solution
